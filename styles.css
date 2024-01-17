@@ -30,7 +30,6 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -43,7 +42,6 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -54,9 +52,12 @@ body {
     border: 1px solid black;
     scroll-snap-align: start;
     box-sizing: border-box;
-    font-size: 2em;
     text-align: center;
     display: flex;
+}
+
+.text {
+    font-size: 12px;
 }
 
 .sotto {
