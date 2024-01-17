@@ -12,13 +12,16 @@ body {
     -webkit-overflow-scrolling: touch; /* Per il supporto su dispositivi iOS */
 }
 
+.h1 {
+    font-size: 25px;
+}
+
 .sopra {
     position: fixed;
     width: 100vw;
     height: 20vh;
     background-color: ligthgrey;
     align-items: center;
-    font-size: 2em;
     color: red;
 }
 
