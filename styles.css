@@ -12,18 +12,14 @@ body {
     -webkit-overflow-scrolling: touch; /* Per il supporto su dispositivi iOS */
 }
 
-.h1 {
-    font-size: 2em;
-    color: red;
-}
-
 .sopra {
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     background-color: grey;
-    align-items: center;
+    text-align: center;
+    color: red;
+    font-size: 2em;
 }
-
 
 .image1 {
     flex: 0 0 auto;
@@ -54,7 +50,7 @@ body {
 }
 
 .sotto {
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     background-color: lightgrey;
     text-align: center;
