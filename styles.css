@@ -14,7 +14,7 @@ body {
 
 .sopra {
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
     background-color: grey;
     text-align: center;
     color: red;
@@ -30,8 +30,6 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2em;
 }
 
@@ -44,8 +42,6 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2em;
 }
 
