@@ -31,6 +31,7 @@ body {
     box-sizing: border-box;
     display: flex;
     font-size: 2em;
+    text-align: center;
 }
 
 .image2 {
@@ -43,6 +44,7 @@ body {
     box-sizing: border-box;
     display: flex;
     font-size: 2em;
+    text-align: center;
 }
 
 .image3 {
@@ -53,6 +55,7 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     font-size: 2em;
+    text-align: center;
 }
 
 .sotto {
