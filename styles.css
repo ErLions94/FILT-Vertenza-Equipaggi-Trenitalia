@@ -14,15 +14,15 @@ body {
 
 .h1 {
     font-size: 25px;
+    color: red;
 }
 
 .sopra {
     position: fixed;
     width: 100vw;
     height: 20vh;
-    background-color: ligthgrey;
+    background-color: grey;
     align-items: center;
-    color: red;
 }
 
 
