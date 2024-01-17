@@ -12,12 +12,36 @@ body {
     -webkit-overflow-scrolling: touch; /* Per il supporto su dispositivi iOS */
 }
 
+.sopra {
+    width: 100vw;
+    height: 20vh;
+    background-color: ligthgrey;
+    align-items: center;
+    font-size: 6em;
+    color: red;
+}
+
+
 .image1 {
     flex: 0 0 auto;
     width: 100vw;
     height: 50vh;
     background-color: pink;
     border: 1px solid purple;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.image2 {
+    flex: 0 0 auto;
+    width: 100vw;
+    height: 50vh;
+    background-color: green;
+    border: 1px solid black;
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
