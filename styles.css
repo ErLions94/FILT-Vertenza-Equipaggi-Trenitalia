@@ -13,7 +13,7 @@ body {
 }
 
 .h1 {
-    font-size: 25px;
+    font-size: 2em;
     color: red;
 }
 
@@ -52,4 +52,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+}
+
+.sotto {
+    height: 15vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
 }
