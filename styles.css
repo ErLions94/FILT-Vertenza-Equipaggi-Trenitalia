@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
 }
 
 .scroll-container {
@@ -12,12 +12,12 @@ body {
     -webkit-overflow-scrolling: touch; /* Per il supporto su dispositivi iOS */
 }
 
-.image {
+.image1 {
     flex: 0 0 auto;
     width: 100vw;
-    height: 100vh;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    height: 50vh;
+    background-color: pink;
+    border: 1px solid purple;
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
