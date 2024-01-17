@@ -4,7 +4,6 @@ body {
 }
 
 .scroll-container {
-    position-y: 20vh;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
