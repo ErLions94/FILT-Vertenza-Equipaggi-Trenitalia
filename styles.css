@@ -26,7 +26,7 @@ body {
     width: 100vw;
     height: 50vh;
     background-color: pink;
-    border: 1px solid purple;
+    border: 1px solid black;
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
@@ -42,6 +42,16 @@ body {
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
+    font-size: 2em;
+}
+
+.image3 {
+    width: 100vw;
+    height: 50vh;
+    background-color: orange;
+    border: 1px solid black;
+    scroll-snap-align: start;
+    box-sizing: border-box;
     font-size: 2em;
 }
 
