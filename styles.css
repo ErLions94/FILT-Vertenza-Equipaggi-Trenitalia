@@ -54,10 +54,11 @@ body {
 }
 
 .sotto {
-    height: 15vh;
-    position: fixed;
-    bottom: 0;
+    height: 30vh;
     width: 100%;
-    background-color: blue;
+    background-color: lightgrey;
     text-align: center;
+    color: red;
+    font-size: 2em;
 }
+
