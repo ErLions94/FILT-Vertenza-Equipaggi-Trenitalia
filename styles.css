@@ -18,7 +18,6 @@ body {
 }
 
 .sopra {
-    position: fixed;
     width: 100vw;
     height: 20vh;
     background-color: grey;
