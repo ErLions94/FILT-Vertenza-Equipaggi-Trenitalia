@@ -8,18 +8,21 @@
 </head>
 <body>
     <style>
+    @media (min-width: 950px) {
+        .testi {min-height: 50vh;}
+        .post {min-height: 50vh;}
+        .colonne {min-height: 50vh;}
+    }    
         
-    @media (max-width: 950px) {
+    @media (min-width: 481px) and (max-width: 950px) {
         .sopra {display: none;}
         .sotto {display: none;}
-        .testi {height: 100vh;}
-        .post {height: 100vh;}
-        .colonne {height: 100vh;}
+        .testi {min-height: 100vh;}
+        .post {min-height: 100vh;}
+        .colonne {min-height: 100vh;}
     }
 
     @media (max-width: 480px) {
-        .sopra {display: unset;}
-        .sotto {display: unset;}
         .post {height: 50vh;}
         .colonne {height: 50vh;}
         .testi {height: 50vh;}
