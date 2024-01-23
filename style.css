@@ -4,15 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.sopra {
-    max-width: 100vw;
-    height: 30vh;
-}
-
-.sopra img {
-    width: 100%;
-}
-
 .post {
     display: flex;
     box-sizing: border-box;
