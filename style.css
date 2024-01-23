@@ -5,14 +5,8 @@ body {
 }
 
 .sopra {
-    background-color: #fafafa;
-    padding: 10px;
-    text-align: center;
+    width: 100vh;
     height: 30vh;
-}
-
-.sopra img {
-    width: 100%;
 }
 
 .post {
