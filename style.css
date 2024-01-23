@@ -11,6 +11,8 @@ body {
     height: 30vh;
 }
 
+.sopra img {width: 100%;}
+
 .post {
     display: flex;
     box-sizing: border-box;
