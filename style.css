@@ -5,8 +5,12 @@ body {
 }
 
 .sopra {
-    width: 100vh;
+    max-width: 100vw;
     height: 30vh;
+}
+
+.sopra img {
+    width: 100%;
 }
 
 .post {
