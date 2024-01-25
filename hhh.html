@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotazione Automatica</title>
+    <style>
+        #rotatingDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="rotatingDiv" onclick="toggleRotation()">Clicca per ruotare</div>
+
+<script>
+    let rotationEnabled = false;
+
+    function toggleRotation() {
+        rotationEnabled = !rotationEnabled;
+
+        if (rotationEnabled) {
+            enableRotation();
+        } else {
+            disableRotation();
+        }
+    }
+
+    function enableRotation() {
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener('deviceorientation', handleOrientation);
+        } else {
+            alert("Il tuo dispositivo non supporta l'orientamento.");
+        }
+    }
+
+    function disableRotation() {
+        window.removeEventListener('deviceorientation', handleOrientation);
+    }
+
+    function handleOrientation(event) {
+        const { alpha, beta, gamma } = event;
+
+        // Usa i valori di alpha, beta, gamma per ruotare il div
+        document.getElementById('rotatingDiv').style.transform = `rotate(${gamma}deg)`;
+    }
+</script>
+
+</body>
+</html>

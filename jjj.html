@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #contenitore {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #testo-piccolo {
+            display: block;
+        }
+
+        #testo-grande {
+            display: none;
+        }
+
+        @media screen and (min-width: 480px) {
+            #testo-piccolo {
+                display: none;
+            }
+
+            #testo-grande {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenitore" onclick="cambiaTesto()">
+        <div id="testo-piccolo">Testo per schermi piccoli</div>
+        <div id="testo-grande">Testo per schermi grandi</div>
+    </div>
+
+    <script>
+        function cambiaTesto() {
+            var testoPiccolo = document.getElementById('testo-piccolo');
+            var testoGrande = document.getElementById('testo-grande');
+
+            if (window.innerWidth < 480) {
+                // Se la larghezza dello schermo è inferiore a 480px
+                if (testoPiccolo.style.display === 'block') {
+                    testoPiccolo.style.display = 'none';
+                    testoGrande.style.display = 'block';
+                } else {
+                    testoPiccolo.style.display = 'block';
+                    testoGrande.style.display = 'none';
+                }
+            }
+        }
+
+        // Aggiungi un listener per l'evento resize
+        window.addEventListener('resize', function () {
+            cambiaTesto();
+        });
+    </script>
+</body>
+</html>
