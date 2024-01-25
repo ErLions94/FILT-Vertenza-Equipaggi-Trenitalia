@@ -46,6 +46,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    function handleClickOnTextContainer(event) {
+        // Check if the window width is less than 480 pixels
+        var windowWidth = window.innerWidth;
+        if (windowWidth < 480) {
+            // Switch the text content when clicked
+            event.target.innerHTML = 'Your new text content for screens less than 480px';
+        }
+    }
+
+    // Add click event listeners to each text container
+    for (var i = 1; i <= 12; i++) {
+        var textContainer = document.getElementById('text-container-' + i);
+        textContainer.addEventListener('click', handleClickOnTextContainer);
+    }
+
     
     window.addEventListener('resize', updateText);
 
