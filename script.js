@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let textContainer = document.getElementById('text-container-' + i);
         textContainer.addEventListener('click', function () {
             // Verifica sia la larghezza della finestra che l'evento di clic
-            if (window.innerWidth > 480 || textContainer.dataset.state === 'clicked') {
+            if (window.innerWidth < 480 || textContainer.dataset.state === 'clicked') {
                 textContainer.innerHTML = 'Nuovo testo per il contenitore ' + i + ' quando cliccato su schermi grandi o da clic.';
                 textContainer.dataset.state = 'clicked';
             }
