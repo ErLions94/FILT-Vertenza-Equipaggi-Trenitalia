@@ -49,6 +49,21 @@ document.addEventListener('DOMContentLoaded', function () {
     
     window.addEventListener('resize', updateText);
 
+    for (let i = 1; i <= 12; i++) {
+        let textContainer = document.getElementById('text-container-' + i);
+        textContainer.addEventListener('click', function () {
+            // Toggle between the two sets of text when clicked
+            if (textContainer.dataset.state === 'first') {
+                textContainer.innerHTML = 'New text for container ' + i + ' when clicked.';
+                textContainer.dataset.state = 'second';
+            } else {
+                // Revert to the original text when clicked again
+                updateText(); // Call the updateText function to reset the text
+                textContainer.dataset.state = 'first';
+            }
+        });
+    }
+
     
     updateText();
 });
