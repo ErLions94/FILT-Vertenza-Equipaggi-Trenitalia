@@ -46,24 +46,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    
-    window.addEventListener('resize', updateText);
-
     for (let i = 1; i <= 12; i++) {
             let textContainer = document.getElementById('text-container-' + i);
             let newText = 'Nuovo testo per il contenitore ' + i + ' quando cliccato su schermi grandi.';
 
-            // Cambia il testo se la larghezza della finestra è superiore a 480px o al clic
-            if (windowWidth > 480) {
+            // Cambia il testo solo se la larghezza della finestra è inferiore a 480px
+            if (windowWidth < 480) {
                 textContainer.innerHTML = newText;
             }
 
             // Aggiungi l'evento di clic al contenitore di testo
             textContainer.addEventListener('click', function () {
-                textContainer.innerHTML = newText;
+                // Cambia il testo solo se la larghezza della finestra è inferiore a 480px
+                if (windowWidth < 480) {
+                    textContainer.innerHTML = newText;
+                }
             });
         }
     }
+
+    
+    window.addEventListener('resize', updateText);
+
+   
 
     
     updateText();
