@@ -47,15 +47,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleClickOnTextContainer(event) {
-        // Check if the window width is less than 480 pixels
-        var windowWidth = window.innerWidth;
-        if (windowWidth < 480) {
-            // Switch the text content when clicked
-            event.target.innerHTML = 'Your new text content for screens less than 480px';
+        // Cambia lo stato del testo alternativo
+        isAlternateText = !isAlternateText;
+
+        // Switch the text content when clicked
+        if (isAlternateText) {
+            event.target.innerHTML = 'Il tuo nuovo contenuto di testo per schermi inferiori a 480px';
+        } else {
+            // Ripristina il testo originale
+            updateText();
         }
     }
 
-    // Add click event listeners to each text container
+    // Aggiungi gli event listener di click a ciascun contenitore di testo
     for (var i = 1; i <= 12; i++) {
         var textContainer = document.getElementById('text-container-' + i);
         textContainer.addEventListener('click', handleClickOnTextContainer);
