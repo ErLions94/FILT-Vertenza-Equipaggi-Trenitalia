@@ -45,26 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
             textContainer12.innerHTML = '<li>Art.36 contratto aziendale punto 2 6° giorno € 24.<li>Art.36 contratto aziendale punto 2 7° giorno € 34.<li>Art.76 CCNL punto 1 indennità domenicale € 20.<li>Art.33 contratto aziendale cantiere notturno € 12.<li>Art.36 punto 1 indennità diverse (prestazione unica o con intervallo fino ad 1 ora) € 1 per ogni giornata di presenza.<li>Art.79 reperibilità CCNL Punto 5.1 € 14 giornate lavorative € 32 giornate di riposo.<li>Indennità accordo nazionale con fino a 5 prestazioni da un orario notturno € 4 a presenza nel periodo di programmazione.<li>Indennità accordo nazionale con 6 prestazioni da un orario notturno € 7.50 a presenza nel periodo di programmazione.<li>7° notte nel mese € 15 aggiuntive.<li>8° notte nel mese € 18 aggiuntive.<li>9° notte nel mese € 20 aggiuntive.';
         }
     }
-
-    for (let i = 1; i <= 12; i++) {
-            let textContainer = document.getElementById('text-container-' + i);
-            let newText = 'Nuovo testo per il contenitore ' + i + ' quando cliccato su schermi grandi.';
-
-            // Cambia il testo solo se la larghezza della finestra è inferiore a 480px
-            if (windowWidth < 480) {
-                textContainer.innerHTML = newText;
-            }
-
-            // Aggiungi l'evento di clic al contenitore di testo
-            textContainer.addEventListener('click', function () {
-                // Cambia il testo solo se la larghezza della finestra è inferiore a 480px
-                if (windowWidth < 480) {
-                    textContainer.innerHTML = newText;
-                }
-            });
-        }
-    }
-
     
     window.addEventListener('resize', updateText);
 
